@@ -74,33 +74,86 @@
       <p>ali_monoar</p>
     </section>
     <section>
-      <h1>Collect Info</h1>
-      <!-- phone directory -->
-      <form action="submit">
-        <label for="name">Name</label> <br />
-        <input type="text" id="name" placeholder="Name" /> <br />
-        <label for="phone">Phone Number</label> <br />
-        <input type="tel" id="phone" placeholder="017xxxxxxxxx" /> <br />
-        <label for="email">Email</label> <br />
-        <input type="email" name="" id="email" placeholder /> <br />
-        <div>
-          <label for="gender">Gender</label><br />
-          <input type="radio" name="gender" id="gender" />male
-          <br />
-          <input type="radio" name="gender" id="gender" />female
-        </div>
-        <label for="Skill">Skill</label>
-        <input type="checkbox" name="" id="" /> html
-        <input type="checkbox" name="" id="" /> css
-        <input type="checkbox" name="" id="" /> Java script
-        <br />
-        <label for="address">Address</label><br />
-        <textarea name="address" id="address" rows="4" cols="50"></textarea>
+  <h1>Collect Info</h1>
+  <!-- phone directory -->
+  <form action="submit">
+    <label for="name">Name</label><br />
+    <input type="text" id="name" name="name" placeholder="Enter your name" /><br />
 
-        <br />
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+    <label for="phone">Phone Number</label><br />
+    <input type="tel" id="phone" name="phone" placeholder="017xxxxxxxxx" /><br />
+
+    <label for="email">Email</label><br />
+    <input type="email" id="email" name="email" placeholder="example@mail.com" /><br />
+
+    <label for="password">Password</label><br />
+    <input type="password" id="password" name="password" /><br />
+
+    <label for="age">Age</label><br />
+    <input type="number" id="age" name="age" min="1" max="120" /><br />
+
+    <label for="dob">Date of Birth</label><br />
+    <input type="date" id="dob" name="dob" /><br />
+
+    <label for="time">Preferred Contact Time</label><br />
+    <input type="time" id="time" name="time" /><br />
+
+    <label for="website">Website</label><br />
+    <input type="url" id="website" name="website" placeholder="https://example.com" /><br />
+
+    <label for="resume">Upload Resume</label><br />
+    <input type="file" id="resume" name="resume" /><br />
+
+    <div>
+      <label>Gender</label><br />
+      <input type="radio" name="gender" value="male" /> Male<br />
+      <input type="radio" name="gender" value="female" /> Female<br />
+      <input type="radio" name="gender" value="other" /> Other
+    </div><br />
+
+    <label>Skills</label><br />
+    <input type="checkbox" name="skills" value="html" /> HTML
+    <input type="checkbox" name="skills" value="css" /> CSS
+    <input type="checkbox" name="skills" value="javascript" /> JavaScript<br />
+
+    <label for="country">Country</label><br />
+    <select id="country" name="country">
+      <option value="">--Select--</option>
+      <option value="bd">Bangladesh</option>
+      <option value="in">India</option>
+      <option value="us">USA</option>
+    </select><br />
+
+    <label for="experience">Experience (years)</label><br />
+    <input type="range" id="experience" name="experience" min="0" max="20" /><br />
+
+    <label for="favcolor">Favorite Color</label><br />
+    <input type="color" id="favcolor" name="favcolor" /><br />
+    <label for="address">Address</label><br />
+    <textarea name="address" id="address" rows="4" cols="50"></textarea><br />
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section>
+  <h1>Show Data</h1>
+  <p><strong>Name:</strong> John Doe</p>
+  <p><strong>Phone:</strong> 01712345678</p>
+  <p><strong>Email:</strong> john.doe@example.com</p>
+  <p><strong>Password:</strong> ********</p>
+  <p><strong>Age:</strong> 25</p>
+  <p><strong>Date of Birth:</strong> 2001-05-15</p>
+  <p><strong>Preferred Contact Time:</strong> 14:30</p>
+  <p><strong>Website:</strong> https://johndoe.com</p>
+  <p><strong>Gender:</strong> Male</p>
+  <p><strong>Skills:</strong> HTML, CSS</p>
+  <p><strong>Country:</strong> Bangladesh</p>
+  <p><strong>Experience:</strong> 5 years</p>
+  <p><strong>Favorite Color:</strong> Blue</p>
+  <p><strong>Address:</strong> 123 Main Street, Dhaka</p>
+</section>
+
   </body>
 </html>
