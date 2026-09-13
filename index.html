@@ -6,154 +6,191 @@
     <title>Ali Monoar</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <span>logo</span>
+      <div class="logo">
+        <h1>Ali Monoar</h1>
+      </div>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>contact</li>
-        </ul>
-        <ul>
-          welcome to my website
-          <ol>
-            <li>Sign Up</li>
-          </ol>
-          <ol>
-            <li>Log in</li>
-          </ol>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <h1>About Me</h1>
 
-      <h2>Name:-</h2>
-      <p>Ali Monoar</p>
-      <p>I am a cs graduate. I am learning MERN stack web development.</p>
-      <h2>Education</h2>
-      <p><strong>BSC</strong> in <strong>CSE</strong></p>
-      <h3>Bangladesh University</h3>
-      <h2>HSC</h2>
-      <p><strong>Science</strong></p>
-      <h3>Chowdala Johur Ahmed Mian Collage</h3>
+    <!-- Hero -->
+    <section id="home">
+      <h2>Welcome to my website</h2>
+      <div>
+        <button type="button">Sign Up</button>
+        <button type="button">Log In</button>
+      </div>
     </section>
-    <section>
-      <h1>Skill</h1>
+    <hr />
+
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <h3>Name: Ali Monoar</h3>
+      <p>I am a CS graduate. I am learning MERN stack web development.</p>
+    </section>
+    <hr />
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
       <ul>
-        <li>html</li>
-        <li>CSS</li>
-        <li>Java Script</li>
+        <li>BSC in CSE - Bangladesh University</li>
+        <li>HSC in Science - Chowdala Johur Ahmed Mian College</li>
       </ul>
     </section>
-    <section>
-      <img src="profileCard.png" alt="profileCard" width="400" />
-      <h1>Online Judge Handles</h1>
-      <a href="https://codeforces.com/profile/amonoar4" target="_blank"
-        >CodeForces</a
-      >
-      <a href="https://www.codechef.com/users/amonoar4" target="_blank"
-        >CodeChef</a
-      >
-      <a href="https://leetcode.com/u/amonoar4/" target="_blank">Leetcode</a>
-      <h4>All Problem solving Journey</h4>
-      <a href="https://codolio.com/profile/ali_monoar" target="_blank"
-        >Codolio</a
-      >
-      <h1>Github</h1>
-      <a href="https://github.com/AliMonoar45">Github</a>
-      <h1>Gmail</h1>
-      <a href="mailto:amonwar4@gmail.com">Mail me</a>
+    <hr />
+
+    <!-- Skills -->
+    <section id="skill">
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
     </section>
-    <section>
-      <label for="email">Your email</label>
-      <input type="text" placeholder="mail" />
+    <hr />
+
+    <!-- Profile Card -->
+    <section id="profile-card">
+      <h2>Profile Card</h2>
+      <figure>
+        <img src="profileCard.png" width="240" />
+        <figcaption>Ali Monoar</figcaption>
+      </figure>
     </section>
-    <section>
-      &copy;
-      <p>ali_monoar</p>
+    <hr />
+
+    <!-- Online Judge Handles -->
+    <section id="handles">
+      <h2>Online Judge Handles</h2>
+      <ul>
+        <li>
+          <a href="https://codeforces.com/profile/amonoar4">CodeForces</a>
+        </li>
+        <li><a href="https://www.codechef.com/users/amonoar4">CodeChef</a></li>
+        <li><a href="https://leetcode.com/u/amonoar4/">Leetcode</a></li>
+      </ul>
+      <h3>All Problem Solving Journey</h3>
+      <ul>
+        <li><a href="https://codolio.com/profile/ali_monoar">Codolio</a></li>
+        <li><a href="https://github.com/AliMonoar45">GitHub</a></li>
+        <li><a href="#">Gmail</a></li>
+      </ul>
     </section>
-    <section>
-  <h1>Collect Info</h1>
-  <!-- phone directory -->
-  <form action="submit">
-    <label for="name">Name</label><br />
-    <input type="text" id="name" name="name" placeholder="Enter your name" /><br />
+    <hr />
 
-    <label for="phone">Phone Number</label><br />
-    <input type="tel" id="phone" name="phone" placeholder="017xxxxxxxxx" /><br />
+    <!-- Contact / Email -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me</p>
+      <form action="#" method="post">
+        <label for="userEmail">Your email:</label>
+        <input
+          type="email"
+          id="userEmail"
+          name="userEmail"
+          placeholder="you@example.com"
+          required=""
+        />
+        <button type="submit">Email</button>
+      </form>
+    </section>
+    <hr />
 
-    <label for="email">Email</label><br />
-    <input type="email" id="email" name="email" placeholder="example@mail.com" /><br />
+    <!-- Collect Info -->
+    <section id="collect-info">
+      <h2>Collect Info</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Details</legend>
 
-    <label for="password">Password</label><br />
-    <input type="password" id="password" name="password" /><br />
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <br /><br />
 
-    <label for="age">Age</label><br />
-    <input type="number" id="age" name="age" min="1" max="120" /><br />
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="017xxxxxxxxx"
+          />
+          <br /><br />
 
-    <label for="dob">Date of Birth</label><br />
-    <input type="date" id="dob" name="dob" /><br />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+          />
+          <br /><br />
 
-    <label for="time">Preferred Contact Time</label><br />
-    <input type="time" id="time" name="time" /><br />
+          <fieldset>
+            <legend>Gender</legend>
+            <label
+              >Male
+              <input type="radio" name="gender" value="male" />
+            </label>
+            <label
+              >Female
+              <input type="radio" name="gender" value="female" />
+            </label>
+          </fieldset>
+          <br />
 
-    <label for="website">Website</label><br />
-    <input type="url" id="website" name="website" placeholder="https://example.com" /><br />
+          <fieldset>
+            <legend>Skill</legend>
+            <label
+              >HTML
+              <input type="checkbox" name="skill" value="html" />
+            </label>
+            <label
+              >CSS
+              <input type="checkbox" name="skill" value="css" />
+            </label>
+            <label
+              >JavaScript
+              <input type="checkbox" name="skill" value="javascript" />
+            </label>
+          </fieldset>
+          <br />
 
-    <label for="resume">Upload Resume</label><br />
-    <input type="file" id="resume" name="resume" /><br />
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            rows="3"
+            cols="40"
+            placeholder="Enter your address"
+          ></textarea>
+          <br /><br />
 
-    <div>
-      <label>Gender</label><br />
-      <input type="radio" name="gender" value="male" /> Male<br />
-      <input type="radio" name="gender" value="female" /> Female<br />
-      <input type="radio" name="gender" value="other" /> Other
-    </div><br />
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
 
-    <label>Skills</label><br />
-    <input type="checkbox" name="skills" value="html" /> HTML
-    <input type="checkbox" name="skills" value="css" /> CSS
-    <input type="checkbox" name="skills" value="javascript" /> JavaScript<br />
-
-    <label for="country">Country</label><br />
-    <select id="country" name="country">
-      <option value="">--Select--</option>
-      <option value="bd">Bangladesh</option>
-      <option value="in">India</option>
-      <option value="us">USA</option>
-    </select><br />
-
-    <label for="experience">Experience (years)</label><br />
-    <input type="range" id="experience" name="experience" min="0" max="20" /><br />
-
-    <label for="favcolor">Favorite Color</label><br />
-    <input type="color" id="favcolor" name="favcolor" /><br />
-    <label for="address">Address</label><br />
-    <textarea name="address" id="address" rows="4" cols="50"></textarea><br />
-
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-<section>
-  <h1>Show Data</h1>
-  <p><strong>Name:</strong> John Doe</p>
-  <p><strong>Phone:</strong> 01712345678</p>
-  <p><strong>Email:</strong> john.doe@example.com</p>
-  <p><strong>Password:</strong> ********</p>
-  <p><strong>Age:</strong> 25</p>
-  <p><strong>Date of Birth:</strong> 2001-05-15</p>
-  <p><strong>Preferred Contact Time:</strong> 14:30</p>
-  <p><strong>Website:</strong> https://johndoe.com</p>
-  <p><strong>Gender:</strong> Male</p>
-  <p><strong>Skills:</strong> HTML, CSS</p>
-  <p><strong>Country:</strong> Bangladesh</p>
-  <p><strong>Experience:</strong> 5 years</p>
-  <p><strong>Favorite Color:</strong> Blue</p>
-  <p><strong>Address:</strong> 123 Main Street, Dhaka</p>
-</section>
-
+    <!-- Footer -->
+    <footer>
+      <p>© Ali Monoar</p>
+    </footer>
   </body>
 </html>
